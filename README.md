@@ -15,7 +15,6 @@ And PHP if you need to read nicknames from your forum.
 ## Usage
 ### Requirements
   * PHP >=5.4
-  * PHP modules: OpenSSL, mbstring
   * [TinyWS](https://github.com/kiler129/TinyWs) with dependencies
   * Bootstrap and jQuery (if you want to use my layout)
 
