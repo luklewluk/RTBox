@@ -149,7 +149,6 @@ class RunServer implements ClientsHandlerInterface
      *
      * @param WebSocketClient $client
      *
-     * @return mixed
      * @see Client::disconnect()
      * @see \noFlash\CherryHttp\StreamServerNode::disconnect()
      */
