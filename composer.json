@@ -1,0 +1,9 @@
+{
+    "require": {
+        "noflash/cherryhttp": "dev-master",
+        "noflash/shout": "dev-master",
+        "noflash/tinyws": "dev-master",
+        "twbs/bootstrap": "dev-master",
+        "components/jquery": "~2.1"
+    }
+}
