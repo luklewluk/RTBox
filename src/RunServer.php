@@ -1,5 +1,5 @@
 <?php
-namespace luklew\ShoutSocket;
+namespace luklew\RTBox;
 
 /**
  * Created by PhpStorm.

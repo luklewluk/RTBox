@@ -6,7 +6,7 @@
  * Time: 19:01
  */
 
-namespace luklew\ShoutSocket;
+namespace luklew\RTBox;
 
 
 use noFlash\TinyWs\Message;
