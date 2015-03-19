@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "87b5b03e88265438314dacc338b2e88a",
+    "hash": "6eb7227bf265c6a4ad7c2448edf7979f",
     "packages": [
         {
             "name": "components/jquery",
@@ -154,12 +154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kiler129/TinyWs.git",
-                "reference": "a56ad5455c1d0cefe5a41d73831f123b940f4e74"
+                "reference": "ec45e40019feec9f22117ef869ba05029e1f7e5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kiler129/TinyWs/zipball/a56ad5455c1d0cefe5a41d73831f123b940f4e74",
-                "reference": "a56ad5455c1d0cefe5a41d73831f123b940f4e74",
+                "url": "https://api.github.com/repos/kiler129/TinyWs/zipball/ec45e40019feec9f22117ef869ba05029e1f7e5d",
+                "reference": "ec45e40019feec9f22117ef869ba05029e1f7e5d",
                 "shasum": ""
             },
             "require": {
@@ -198,7 +198,7 @@
                 "server",
                 "websocket"
             ],
-            "time": "2015-03-15 18:25:40"
+            "time": "2015-03-19 20:04:03"
         },
         {
             "name": "psr/log",
@@ -244,12 +244,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "f5250d0a0e2a7cfed77f55654027ff151ebe5aeb"
+                "reference": "eece194763b5ab7ae84bacab34e9ae5590b806cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/f5250d0a0e2a7cfed77f55654027ff151ebe5aeb",
-                "reference": "f5250d0a0e2a7cfed77f55654027ff151ebe5aeb",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/eece194763b5ab7ae84bacab34e9ae5590b806cf",
+                "reference": "eece194763b5ab7ae84bacab34e9ae5590b806cf",
                 "shasum": ""
             },
             "replace": {
@@ -287,7 +287,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2015-03-16 15:50:28"
+            "time": "2015-03-19 05:30:30"
         }
     ],
     "packages-dev": [],
@@ -301,6 +301,8 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.4.0"
+    },
     "platform-dev": []
 }

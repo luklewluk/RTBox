@@ -1,5 +1,5 @@
 {
-    "name": "luklew/RTBox",
+    "name": "luklew/rt-box",
     "description": "ShoutBox server/client using WebSocket Protocol.",
     "keywords": [
       "shoutbox",
@@ -19,7 +19,7 @@
       }
     ],
     "require": {
-        "php": "<=5.4.0",
+        "php": ">=5.4.0",
         "noflash/cherryhttp": "dev-master",
         "noflash/shout": "dev-master",
         "noflash/tinyws": "dev-master",
