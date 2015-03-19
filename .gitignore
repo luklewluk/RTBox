@@ -22,6 +22,5 @@ Temporary Items
 .apdisk
 
 vendor
-composer.lock
 composer.phar
 

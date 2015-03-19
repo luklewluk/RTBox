@@ -44,5 +44,4 @@ class ShoutBoxUser
     {
         $this->nickname = $new_nick;
     }
-
 }
