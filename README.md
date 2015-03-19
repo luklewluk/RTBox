@@ -1,7 +1,7 @@
-# SocketShoutBox
+# RTBox
 
-Simple ShoutBox using WebSocket Protocol. The project is quite new and it has only basic functions which can show how more powerful WebSocket is. 
-SocketShoutBox is based on TinyWS - High performance, flexible, RFC-complaint & well documented WebSockets server library.
+RTBox (Real-Time Box) is a ShoutBox using WebSocket Protocol. The project is quite new and it has only basic functions which can show how more powerful WebSocket is. 
+RTBox is based on TinyWS - High performance, flexible, RFC-complaint & well documented WebSockets server library.
 
 ### WebSockets? There is lots of good working AJAX shoutboxes!
 A lot of websites and forums use simple shoutbox which refreshs every X seconds. To avoid unnecessary connections between browser and server, people designed WebSockets for synchronous connection (which is the best for Chats, ShoutBoxes, etc.).
