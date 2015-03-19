@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>WebSocket ShoutBox</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<form class="form-inline" onSubmit="ShoutBox.postShout(); return false;">
+    <div class="form-group">
+        <input id="shout_data" type="text" class="form-control" placeholder="Your message">
+    </div>
+    <input type="submit" value="Send" id="shouting-status" class="btn btn-success"/>
+</form>
+<div id="shoutbox_data" style="height: 600px; overflow: auto;">Connecting...</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../vendor/components/jquery/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/emoticons.js"></script>
+<script type="text/javascript" src="js/websocket.js"></script>
+
+<div class="container">
+    <div style="font-size: 10px; position: absolute; bottom: 0;}"> WebSocket ShoutBox by luklew based on <a style="font-size: 10px" href="https://github.com/kiler129/TinyWs">TinyWS</a>
+    </div>
+</div>
+
+</body>
+</html>
