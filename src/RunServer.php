@@ -26,9 +26,9 @@ class RunServer implements ClientsHandlerInterface {
 
     /** @var LoggerInterface */
     protected $logger;
-    /** @var array ShoutBoxUser */
+    /** @var ShoutBoxUser[] */
     protected $users = [];
-    /** @var array Message - temporary way to keep last messages*/
+    /** @var Message[] - temporary way to keep last messages*/
     protected $last_messages = [];
 
     public function __construct(LoggerInterface $logger = null)
