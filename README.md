@@ -5,6 +5,7 @@ SocketShoutBox is based on TinyWS - High performance, flexible, RFC-complaint & 
 
 ### WebSockets? There is lots of good working AJAX shoutboxes!
 A lot of websites and forums use simple shoutbox which refreshs every X seconds. To avoid unnecessary connections between browser and server, people designed WebSockets for synchronous connection (which is the best for Chats, ShoutBoxes, etc.).
+I wanted to try this new technology and check if it works as good as people say. It does. Try it yourself :)
 
 
 ### Can I implement it into [forum engine]?
