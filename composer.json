@@ -21,9 +21,9 @@
     "require": {
         "php": "<=5.4.0",
         "noflash/cherryhttp": "dev-master",
-      + "noflash/shout": "dev-master",
+        "noflash/shout": "dev-master",
         "noflash/tinyws": "dev-master",
-      + "twbs/bootstrap": "dev-master",
+       "twbs/bootstrap": "dev-master",
         "components/jquery": "~2.1"
     }
 }
