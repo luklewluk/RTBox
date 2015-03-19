@@ -12,7 +12,8 @@ namespace luklew\RTBox;
 use noFlash\TinyWs\Message;
 use noFlash\TinyWs\WebSocketClient;
 
-class ShoutBoxUser {
+class ShoutBoxUser
+{
 
     /** @var WebSocketClient */
     protected $websocket;
@@ -23,21 +24,24 @@ class ShoutBoxUser {
     /**
      * @param WebSocketClient $client
      */
-    public function onConnect(WebSocketClient $client){
+    public function onConnect(WebSocketClient $client)
+    {
         $this->websocket = $client;
     }
 
     /**
      * @param Message $message
      */
-    public function sendMessage(Message $message){
+    public function sendMessage(Message $message)
+    {
         $this->websocket->pushData($message);
     }
 
     /**
      * @param string $new_nick
      */
-    public function nickRename($new_nick){
+    public function nickRename($new_nick)
+    {
         $this->nickname = $new_nick;
     }
 

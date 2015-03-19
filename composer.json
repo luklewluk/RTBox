@@ -1,7 +1,25 @@
 {
+    "name": "luklew/RTBox",
+    "description": "ShoutBox server/client using WebSocket Protocol.",
+    "keywords": [
+      "shoutbox",
+      "forum",
+      "websocket",
+      "server",
+      "client"
+    ],
+    "homepage": "https://github.com/luklewluk/RTBox",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Lukasz Lewandowski",
+        "email": "luklewluk@gmail.com",
+        "role": "Developer"
+      }
+    ],
     "require": {
-        "noflash/cherryhttp": "dev-master",
-        "noflash/shout": "dev-master",
+        "php": "<=5.4.0",
         "noflash/tinyws": "dev-master",
         "twbs/bootstrap": "dev-master",
         "components/jquery": "~2.1"

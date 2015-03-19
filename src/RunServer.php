@@ -22,13 +22,14 @@ use noFlash\TinyWs\Server;
 use noFlash\TinyWs\WebSocketClient;
 use Psr\Log\LoggerInterface;
 
-class RunServer implements ClientsHandlerInterface {
+class RunServer implements ClientsHandlerInterface
+{
 
     /** @var LoggerInterface */
     protected $logger;
     /** @var ShoutBoxUser[] */
     protected $users = [];
-    /** @var Message[] - temporary way to keep last messages*/
+    /** @var Message[] - temporary way to keep last messages */
     protected $last_messages = [];
 
     public function __construct(LoggerInterface $logger = null)
@@ -99,15 +100,13 @@ class RunServer implements ClientsHandlerInterface {
                 $msg = new Message();
                 $msg->setPayload('loggedin');
                 $client->pushData($msg);
-            }
-            else {
+            } else {
                 $msg = new Message();
                 $msg->setPayload('loginerr');
                 $client->pushData($msg);
             }
 
-        }
-        elseif ($raw_msg !== '') {
+        } elseif ($raw_msg !== '') {
             if (!empty($this->users[$client->getPeerName()]->nickname)) {
                 $nickname = $this->users[$client->getPeerName()]->nickname;
                 $html_msg = $this->createMessage($nickname, $raw_msg);
@@ -168,7 +167,8 @@ class RunServer implements ClientsHandlerInterface {
      * date: [current server time]
      * text: $message
      */
-    protected function createMessage($nickname, $message){
+    protected function createMessage($nickname, $message)
+    {
         $msg['nick'] = $nickname;
         $msg['date'] = date('j-m-H:i');
         $msg['text'] = $message;
@@ -180,16 +180,19 @@ class RunServer implements ClientsHandlerInterface {
      * Also saves the last message in last_messages array - it is a temporary solution.
      * @param string $message
      */
-    protected function sendShoutToAll($message){
+    protected function sendShoutToAll($message)
+    {
         $msg = new Message();
         $msg->setPayload($message);
         /** @var ShoutBoxUser $user */
-        foreach ($this->users as $user){
+        foreach ($this->users as $user) {
             $user->sendMessage($msg);
 
         }
         if (sizeof($this->last_messages) >= 20)
+        {
             array_shift($this->last_messages);
+        }
         $this->last_messages[] = $msg;
     }
 }
