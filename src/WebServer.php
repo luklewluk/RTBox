@@ -8,21 +8,16 @@ namespace luklew\RTBox;
  * Time: 18:42
  */
 
-require_once('../vendor/autoload.php');
-require_once('ShoutBoxUser.php');
-
 use noFlash\CherryHttp\HttpClient;
 use noFlash\CherryHttp\HttpRequest;
 use noFlash\CherryHttp\HttpResponse;
-use noFlash\Shout\Shout;
 use noFlash\TinyWs\ClientsHandlerInterface;
 use noFlash\TinyWs\DataFrame;
 use noFlash\TinyWs\Message;
-use noFlash\TinyWs\Server;
 use noFlash\TinyWs\WebSocketClient;
 use Psr\Log\LoggerInterface;
 
-class RunServer implements ClientsHandlerInterface
+class WebServer implements ClientsHandlerInterface
 {
 
     /** @var LoggerInterface */
@@ -195,9 +190,3 @@ class RunServer implements ClientsHandlerInterface
         $this->last_messages[] = $msg;
     }
 }
-
-$logger = new Shout();
-$logger->setMaximumLogLevel(6); // Ignoring DEBUG logs
-$server = new Server($logger);
-$server->run(new RunServer());
-

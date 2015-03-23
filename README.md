@@ -20,4 +20,4 @@ And PHP if you need to read nicknames from your forum.
 
 ### How to run?
 If you run it not in your local computer, change 'localhost' to your server IP in js/websocket.js file.
-After installation enter into 'src' directory and execute 'php RunServer.php' (Unix). I recommend to use 'screen' to keep server working constantly.
+After installation enter into 'src' directory and execute 'php run.php' (Unix). I recommend to use 'screen' to keep server working constantly.
