@@ -9,7 +9,7 @@ I wanted to try this new technology and check if it works as good as people say.
 
 
 ### Can I implement it into [forum engine]?
-Currently there is no possibility to automatic installation on any forum but it should be easy to install it manually. In "web" directory you can find very easy HTML/JS implementation of ShoutBox client. If you know HTML a little bit, you can just replace it with your old (ajax) shoutbox.
+Currently there is no possibility to installation on any forum but it should be easy to install it manually. In "web" directory you can find very easy HTML/JS implementation of ShoutBox client. If you know HTML a little bit, you can just replace it with your old (ajax) shoutbox.
 And PHP if you need to read nicknames from your forum. 
 
 ## Usage
