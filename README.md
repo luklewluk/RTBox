@@ -18,6 +18,11 @@ And PHP if you need to read nicknames from your forum.
   * [TinyWS](https://github.com/kiler129/TinyWs) with dependencies
   * Bootstrap and jQuery (if you want to use my layout)
 
-### How to run?
+### How to install
+Using composer you can install RTBox with dependencies within 10 seconds.
+Just run 'php composer.phar install' in directory where you saved RTBox.
+Download composer [here](https://getcomposer.org/download/).
+
+### How to run
 If you run it not in your local computer, change 'localhost' to your server IP in js/websocket.js file.
 After installation enter into 'src' directory and execute 'php run.php' (Unix). I recommend to use 'screen' to keep server working constantly.

@@ -79,6 +79,8 @@ class WebServer implements ClientsHandlerInterface
      * - Sending warnings
      * - Sending messages
      * TODO: Write it in more object oriented way
+     * TODO: JSON coded messages
+     * TODO: PING message handling
      *
      * @param WebSocketClient $client
      * @param Message $message
