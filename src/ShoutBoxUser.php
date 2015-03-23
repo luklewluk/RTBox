@@ -12,7 +12,12 @@ namespace luklew\RTBox;
 use noFlash\TinyWs\Message;
 use noFlash\TinyWs\WebSocketClient;
 
-class ShoutBoxUser
+/**
+ * Class ShoutBoxUser
+ * Holds WebSocketClient data.
+ * @package luklew\RTBox
+ */
+class ShoutBoxUser implements ClientInterface
 {
 
     /** @var WebSocketClient */

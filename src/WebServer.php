@@ -17,6 +17,11 @@ use noFlash\TinyWs\Message;
 use noFlash\TinyWs\WebSocketClient;
 use Psr\Log\LoggerInterface;
 
+/**
+ * Class WebServer
+ * Manages messages and websocket clients.
+ * @package luklew\RTBox
+ */
 class WebServer implements ClientsHandlerInterface
 {
 
@@ -25,11 +30,16 @@ class WebServer implements ClientsHandlerInterface
     /** @var ShoutBoxUser[] */
     protected $users = [];
     /** @var Message[] - temporary way to keep last messages */
-    protected $last_messages = [];
+    protected $messagesLogger;
 
+    /**
+     * @param LoggerInterface $logger
+     */
     public function __construct(LoggerInterface $logger = null)
     {
         $this->logger = $logger;
+        $this->messagesLogger = new MessagesLogger();
+        $this->users[] = &$this->messagesLogger;
     }
 
     /**
@@ -61,8 +71,10 @@ class WebServer implements ClientsHandlerInterface
         $user->onConnect($client);
         $this->users[$client->getPeerName()] = $user;
 
-        if (sizeof($this->last_messages) !== 0) {
-            foreach ($this->last_messages as $message) {
+        $lastMessages = $this->messagesLogger->getLastMessages();
+        // "If" is temporary until I implement better way to keep messages.
+        if (sizeof($lastMessages) !== 0) {
+            foreach ($lastMessages as $message) {
                 $client->pushData($message);
             }
         }
@@ -79,7 +91,7 @@ class WebServer implements ClientsHandlerInterface
      * - Sending warnings
      * - Sending messages
      * TODO: Write it in more object oriented way
-     * TODO: JSON coded messages
+     * TODO: Every message JSON coded
      * TODO: PING message handling
      *
      * @param WebSocketClient $client
@@ -185,10 +197,5 @@ class WebServer implements ClientsHandlerInterface
             $user->sendMessage($msg);
 
         }
-        if (sizeof($this->last_messages) >= 20)
-        {
-            array_shift($this->last_messages);
-        }
-        $this->last_messages[] = $msg;
     }
 }

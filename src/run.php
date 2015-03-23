@@ -6,8 +6,11 @@ use noFlash\Shout\Shout;
 use noFlash\TinyWs\Server;
 
 require_once('../vendor/autoload.php');
+require_once('ClientInterface.php');
+require_once('MessagesLogger.php');
 require_once('ShoutBoxUser.php');
 require_once('WebServer.php');
+
 
 
 $logger = new Shout();
