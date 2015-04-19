@@ -15,7 +15,8 @@ use noFlash\TinyWs\Message;
  * Class MessagesLogger
  * @package luklew\RTBox
  */
-class MessagesLogger implements ClientInterface{
+class MessagesLogger implements ClientInterface
+{
 
     /**
      * @var Message[] - temporary way to keep last messages (Message objects)
@@ -40,7 +41,8 @@ class MessagesLogger implements ClientInterface{
      * @param int $number
      * Returns array with last messages.
      */
-    public function getLastMessages($number = 20){
+    public function getLastMessages($number = 20)
+    {
         return $this->lastMessages;
     }
 }
